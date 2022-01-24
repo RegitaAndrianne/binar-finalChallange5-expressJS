@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <!-- CSS -->
+    <link rel="Stylesheet" href="/style2.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main-page">
+        <div class="container"">
+            <!-- ROW-1 -->
+            <div class="row">
+                <nav>
+                    <a href="/home">
+                        <img class="nav-link d-inline" src="html2-backButton.png">
+                    </a>
+                    <img class="nav-link d-inline" src="html2-logo.png">        
+                    <a class="nav-link text-content text-warning d-inline" href="#">ROCK PAPER SCISSORS</a>
+                </nav>
+            </div>
+
+            <!-- ROW-2 -->
+            <div class="row text-content text-black">
+                <div class="col d-flex justify-content-center"></div>
+                <div class="col d-flex justify-content-center">
+                    <p>PLAYER 1</p>
+                </div>
+                <div class="col d-flex justify-content-center"></div>
+                <div class="col d-flex justify-content-center">
+                    <p>COM</p>
+                </div>
+                <div class="col d-flex justify-content-center"></div>
+            </div>
+
+            <!-- ROW-3 -->
+            <div class="row mt-1">
+                <div class="col d-flex justify-content-center"></div>
+                <div class="col d-flex justify-content-center align-items-center">
+        
+                    <!-- PLAYER 1 -->
+                    <div id="bgRockPlayer" class="d-flex align-items-center justify-content-center">
+                        <img id="rockPlayer" src="html2-rock.png" onclick="chooseRock()">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center"></div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <!-- PLAYER COM -->
+                    <div id="bgRockCom" class="d-flex align-items-center justify-content-center">
+                        <img id="rockCom" src="html2-rock.png">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center"></div>
+            </div>
+
+            <!-- ROW-4 -->
+            <div class="row mt-1">
+                <div class="col d-flex justify-content-center align-items-center"></div>
+                <div class="col d-flex justify-content-center align-items-center align-items-center">
+                    <!-- PLAYER 1 -->
+                    <div id="bgPaperPlayer" class="d-flex align-items-center justify-content-center">
+                        <img id="paperPlayer" src="html2-paper.png" onclick="choosePaper();">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center align-items-center">
+                    <img id="versus" src="html2-VS.png">
+                </div>
+                <div class="col d-flex justify-content-center align-items-center align-items-center">
+                    <!-- PLAYER COM -->
+                    <div id="bgPaperCom" class="d-flex align-items-center justify-content-center">
+                        <img id="paperCom" src="html2-paper.png">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center"></div>
+            </div>
+
+            <!-- ROW-5 -->
+            <div class="row mt-1">
+                <div class="col d-flex justify-content-center"></div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <!-- PLAYER 1 -->
+                    <div id="bgScissorsPlayer" class="d-flex align-items-center justify-content-center">
+                        <img id="scissorsPlayer" src="html2-scissors.png" onclick="chooseScissors()">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center"></div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <!-- PLAYER COM -->
+                    <div id="bgScissorsCom" class="d-flex align-items-center justify-content-center">
+                        <img id="scissorsCom" src="html2-scissors.png">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center"></div>
+            </div>
+
+            <!-- ROW-6 -->
+            <div class="row m-1">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col d-flex justify-content-center">
+                    <img id="refresh" src="html2-refresh.png" onclick="refreshPage()">
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/game.js"></script>
+</body>
+</html>

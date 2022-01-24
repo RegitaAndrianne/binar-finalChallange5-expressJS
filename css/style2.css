@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: inline;
+}
+
+.main-page {
+    background-image: url("html2-bg.png");
+    background-size: 100% 100%;
+    object-fit: contain;
+    height: 720px;
+}
+
+.text-content {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.row {
+    height: 15vh;
+}
+
+#rockPlayer, #paperPlayer, #scissorsPlayer, #rockCom, #paperCom, #scissorsCom{
+    height: 10vh;
+    width: 10vh;
+}
+
+#bgRockPlayer:hover, #bgPaperPlayer:hover, #bgScissorsPlayer:hover{
+    position: absolute;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    height: 15vh;
+    width: 18vh;
+}
+
+.bgAbu{
+    position: absolute;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    height: 15vh;
+    width: 18vh;
+}
+
+#refresh{
+    height: 7vh;
+    transform: rotate(180deg)
+}
+
+.setImgVs{
+    position: absolute;
+    height: 150px;
+    width: 200px;
+}
+
+
+
+
